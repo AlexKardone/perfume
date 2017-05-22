@@ -1,0 +1,14 @@
+{
+   "folders":
+   [
+      {
+         "path": "/Users/alexandermatskevich/Yandex.Disk-alex-kardone.localized/sites/perfume"
+      }
+   ],
+   "settings": {
+      "sublime-view-in-browser": {
+         "baseUrl": "http://localhost/perfume",
+         "basePath": "/Users/alexandermatskevich/Yandex.Disk-alex-kardone.localized/sites/perfume"
+      }
+   }
+}

@@ -1,0 +1,692 @@
+@font-face {
+	font-family: SegoeUILight;
+	src: url(/perfume/fonts/SegoeUILight/SegoeUILight.ttf);
+}
+
+@font-face {
+	font-family: SegoeUISemiBold;
+	src: url(/perfume/fonts/SegoeUISemiBold/SegoeUISemiBold.ttf);
+}
+
+@font-face {
+	font-family: SegoeUIRegular;
+	src: url(/perfume/fonts/SegoeUIRegular/SegoeUIRegular.ttf);
+}
+
+@font-face {
+	font-family: SegoeUIItalic;
+	src: url(/perfume/fonts/SegoeUIItalic/SegoeUIItalic.ttf);
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html,
+body {
+	width: 100%;
+	min-width: 320px;
+	max-width: 1600px;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1400px;
+	min-width: 320px;
+	/*height: 100%;*/
+	margin: 0 auto;
+}
+
+.page-header {
+	height: 704px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: SegoeUILight;
+	background: url(../img/slider-background.png) repeat-x 0 -100px;
+}
+
+.page-header__center {
+	float: left;
+	width: 75%;
+	height: inherit;
+}
+
+/* Page-header__top */
+
+.page-header__top {
+	position: relative;
+	width: 100%;
+	height: 71px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 33px;
+}
+
+.page-header__logo {
+	position: absolute;
+	bottom: 0;
+	width: 178px;
+	height: 39px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.page-header__right {
+	position: absolute;
+	right: 33px;
+	bottom: 0;
+	height: 18px;
+}
+
+.page-header__form {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 100%;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #636262;
+}
+
+.page-header-login {
+	width: 50px;
+}
+
+.page-header-search {
+	background: url(/perfume/img/header-right-sprite.png) no-repeat 8px 0;
+}
+
+.page-header-cart {
+	background: url(/perfume/img/header-right-sprite.png) no-repeat -72px 0;
+}
+
+/* Page-header__middle */
+
+.page-header__middle {
+	width: 100%;
+	height: 632px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 10px 40px 71px;
+	overflow: hidden;
+}
+
+/* Page-header__slider */
+
+.page-header__slider {
+	width: 100%;
+	height: 100%;
+	
+}
+
+.slider__points {
+	position: absolute;
+	left: 45%;
+	width: 58px;
+	height: 8px;
+}
+
+.slider__slider-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 9999px;
+	height: 100%;
+}
+
+.slider-list__item {
+	float: left;
+	width: 490px;
+	height: 100%;
+	margin-right: 1000px;
+	list-style: none;
+}
+
+
+/* Slider-list__product */
+
+.slider-list__product {
+	position: absolute;
+	bottom: 20px;
+	max-width: 498px;
+}
+
+.product__part {
+	float: left;
+}
+
+.product__left {
+	box-sizing: border-box;
+	padding: 50px 0 0 0;
+	color: #363636;
+	text-transform: uppercase;
+}
+
+.product__title {
+	font-size: 34px;
+}
+
+.product__subtitle {
+	font-size: 14px;
+	color: #5d5d5d;
+	margin: 0 0 20px 0;
+}
+
+.product__price {
+	font-family: SegoeUISemiBold;
+	font-size: 17px;
+	color: #373737;
+	margin: 0 0 25px 0;
+}
+
+.product__btn {
+	max-width: 136px;
+	height: 44px;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid #c54d4d;
+	border-radius: 50px;
+}
+
+.product__link {
+	display: block;
+	line-height: 44px;
+	width: 100%;
+	height: 100%;
+	font-family: SegoeUISemiBold;
+	text-decoration: none;
+	font-size: 16px;
+	color: #c54d4d;
+}
+
+.product__img {
+	width: auto;
+	height: 400px;
+}
+
+/* Main-menu */
+
+.page-header__main-menu {
+	position: absolute;
+	right: 0;
+	width: 25%;
+	min-width: 220px;
+	height: inherit;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.main-menu__wrapper {
+	position: absolute;
+	height: 100%;
+	
+	background: #3c3c3c url(/perfume/img/bg-main-nav.png) no-repeat -250px 0;
+}
+
+.main-menu__wrapper-slice {
+	transform: translateX(85%);
+	transition: all ease 1s;
+}
+
+.main-menu__wrapper-slice-left {
+	transform: translateX(0);
+	transition: all ease 1s;
+}
+
+.main-menu__cross-link-slise {
+	float: none;
+}
+
+/* Main-menu cross */
+
+.main-menu__cross {
+	width: 100%;
+	margin: 0 0 105px 0;
+}
+
+.main-menu__cross-link {
+	float: right;
+	margin: 0 20px 0 10px;
+	color: #c44c4c;
+	font-size: 39px;
+	text-decoration: none;
+}
+
+.main-menu__array-link {
+	display: none;
+	margin: 0 0 0 5px;
+}
+
+.main-menu__list {
+	margin: 0;
+	padding: 0 0 0 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+	list-style: none;
+	width: 100%;
+}
+
+.main-menu__item {
+	width: 45%;
+	float: left;
+	margin: 0 5px 85px 0;
+	text-align: center;
+}
+
+.main-menu__link {
+	height: 38px;
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 35px;
+	
+}
+
+.main-menu__link::after {
+	display: none;
+	margin: 0 auto;
+	content: "";
+	width: 50%;
+	border-bottom: 3px solid #c54d4d;
+}
+
+.main-menu__item:hover .main-menu__link::after {
+	display: block;
+}
+
+/* Carousel Best-sellers */
+
+.best-sellers-block {
+	width: 100%;
+	height: 493px;
+	font-family: SegoeUISemibold;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #4d4d4d;
+}
+
+.best-sellers__top {
+	display: table;
+	width: 100%;
+	height: 104px;
+}
+
+.best-sellers__title {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.best-sellers__title h2 {
+	font-family: SegoeUIRegular;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 36px;
+}
+
+.best-sellers__arrows {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	padding-top: 20px;
+	min-width: 63px;
+	height: 100%;
+}
+
+.arrows__arrow:hover {
+	cursor: pointer;
+}
+
+.arrows__arrow:hover rect {
+	fill: #cccccc;
+}
+
+.arrows__arrow_left {
+	float: left;
+}
+
+.arrows__arrow_right {
+	float: right;
+}
+
+.best-sellers__bottom {
+	width: 100%;
+	height: 392px;
+}
+
+.best-sellers__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.best-sellers__item {
+	float: left;
+	display: table-cell;
+	text-align: center;
+	overflow: hidden;
+	width: 250px;
+	margin: 30px 37px 0 0;
+}
+
+.best-sellers__item:last-child {
+	margin-right: 0;
+}
+
+.best-sellers__item img {
+	margin: 0 0 23px 0;
+}
+
+.item__title {
+	font-family: SegoeUISemiBold;
+	font-size: 16px;
+	color: #494949;
+	margin: 0 0 4px 0;
+}
+
+.item__accessory {
+	font-family: SegoeUISemiBold;
+	font-size: 13px;
+	color: #9f9f9f;
+	margin: 0 0 6px 0;
+}
+
+.item__price {
+	font-family: SegoeUISemiBold;
+	font-size: 13px;
+	color: #c44c4c;
+}
+
+/* Sale block */
+
+.sale-block {
+	width: 100%;
+	max-width: 1600px;
+	height: 696px;
+	background: #c44c4c url(../img/viva-la-juicy.png) no-repeat 0 -170px;
+}
+
+.container_sale-block {
+	height: 100%;
+}
+
+.sale-block__wrap {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.sale-block__left {
+	width: 168px;
+	height: 168px;
+	margin: auto 0;
+    padding-bottom: 175px;
+}
+
+.sale-block__sticker {
+	display: flex;
+	vertical-align: middle;
+	text-align: center;
+	width: 168px;
+	height: 168px;
+	background: #ffffff;
+	border-radius: 50%;
+}
+
+.sale-block__sticker p {
+	margin: auto;
+	font-family: SegoeUIItalic;
+	font-size: 54px;
+	color: #c44c4c;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+.sale-block__sticker span {
+	font-size: 33px;
+	line-height: 33px;
+}
+
+.sale-block__center {
+	display: flex;
+	vertical-align: middle;
+	margin-right: 68px;
+}
+
+.sale-block__title {
+	margin: auto auto auto -20px;
+	font-family: SegoeUIItalic;
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.sale-block__right {
+	margin: auto;
+	width: 372px;
+	height: 564px;
+	background: #ffffff;
+}
+
+.sale-block__slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.sale-block__slider-list {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	list-style: none;
+}
+
+.sale-block__item {
+	height: 100%;
+}
+
+.sale-block__product {
+	height: 100%;
+}
+
+
+.sale-block__top,
+.sale-block__product-title,
+.sale-block__manufacturer,
+.sale-block__price {
+	text-align: center;
+}
+
+.sale-block__product-title {
+	font-family: SegoeUISemiBold;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #434343;
+	margin-bottom: 2px;
+}
+
+.sale-block__manufacturer {
+	font-family: SegoeUIRegular;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #969494;
+	margin-bottom: 21px;
+}
+
+.sale-block__price {
+	font-family: SegoeUIlight;
+	font-size: 24px;
+	color: #acacac;
+	margin-bottom: 21px;
+}
+
+.product__btn_sale-block {
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+.slider__points_sale-block {
+	position: absolute;
+	left: 42%;
+    bottom: 25px;
+}
+
+/* subscribe block */
+
+.subscribe-block {
+	display: flex;
+	width: 100%;
+	height: 477px;
+	background: url("/perfume/img/subscribe-bg.png");
+}
+
+.subscribe-block__center {
+	margin: auto;
+	text-align: center;
+}
+
+.subscribe-block__title {
+	font-family: SegoeUISemiBold;
+	font-size: 24px;
+	color: #2f2f2f;
+	text-transform: uppercase;
+}
+
+.subscribe-block__title h3 {
+	margin: 0 0 50px 0;
+}
+
+.subscribe-block__field {
+	display: block;
+	box-sizing: border-box;
+	width: 469px;
+	height: 44px;
+	margin: 0 auto 34px auto;
+	padding: 15px;
+	border: 1px solid #c4c4c1;
+}
+
+.subscribe-block__field::-webkit-input-placeholder {font-family: SegoeUIlight; color:#a5a5a5; font-size: 14px;}
+.subscribe-block__field::-moz-placeholder          {font-family: SegoeUIlight; color:#a5a5a5; font-size: 14px;}/* Firefox 19+ */
+.subscribe-block__field:-moz-placeholder           {font-family: SegoeUIlight; color:#a5a5a5; font-size: 14px;}/* Firefox 18- */
+.subscribe-block__field:-ms-input-placeholder      {font-family: SegoeUIlight; color:#a5a5a5; font-size: 14px;}
+
+.product__btn_subscribe-block {
+	cursor: pointer;
+	max-width: none;
+	width: 237px;
+	text-transform: uppercase;
+	color: #c54d4d;
+	font-size: 16px;
+	background: transparent;
+}
+
+/* Footer */
+
+.footer {
+	padding: 33px 0 0 0;
+	font-family: SegoeUISemiBold;
+	font-size: 14px;
+	background: #2b2c30;
+}
+
+.footer__list {
+	display: table;
+	width: 100%;
+	list-style: none;
+	color: #ffffff;
+	margin-bottom: 33px;
+}
+
+.footer__item {
+	display: table-cell;
+	padding: 0 10px 0 0;
+}
+
+.footer__item h3 {
+	text-transform: uppercase;
+}
+
+.footer__item a {
+	display: block;
+	text-decoration: none;
+	color: #888888;
+}
+
+.footer__soc-wrapper {
+	width: 200px;
+	height: 20px;	
+}
+
+.footer__soc img {
+	float: left;
+	width: auto;
+	height: 20px;
+	margin-right: 20px;
+}
+
+.footer__bottom {
+	height: 44px;
+	line-height: 44px;
+	color: #919191;
+	font-size: 12px;
+	background: #141518;
+	text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+	.page-header__middle {
+		width: 100%;
+		height: 632px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0 10px 40px 0;
+	}
+
+	.slider-list__product {
+		position: absolute;
+		bottom: 10%;
+		max-width: 498px;
+		text-align: center;
+	}
+
+	.product__part {
+		float: none;
+	}
+
+	.product__left {
+		padding: 10px 0 0 0;
+	}
+
+	.product__img {
+		width: 195px;
+		height: auto;
+	}
+
+	.product__btn {
+		margin: 25px auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
